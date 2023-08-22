@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 3rem;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+.btn,
+.btn:active {
+  display: block;
+  font-size: inherit;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  color: inherit;
+  background-color: #161a1d;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: #2b3339;
+}
+
+.btn:active {
+  background-color: #161a1d;
+  border-top: 3px solid black;
+}
+
+.container {
+  background-color: #b1a7a6;
+  border-radius: 0.5rem;
+}
+
+.grid {
+  padding: 1rem;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 2fr repeat(5, 1fr);
+}
+
+.screen {
+  grid-column: 1 / span 4;
+  background-color: #f5f3f4;
+  border-radius: 0.5rem;
+  color: #161a1d;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.hist {
+  min-height: 3rem;
+}
+
+.result {
+  font-weight: 700;
+  font-size: 4rem;
+  min-height: 4rem;
+}
+
+.btn-clear {
+  grid-column: 1 / span 2;
+  background-color: #e5383b;
+}
+
+.btn-clear:hover {
+  background-color: #f65759;
+}
+
+.btn-clear:active {
+  background-color: #e5383b;
+  border-top: 3px solid #1e2122;
+}
+
+.btn-delete {
+  grid-column: 3 / span 2;
+  background-color: #660708;
+}
+
+.btn-delete:hover {
+  background-color: #761c1e;
+}
+
+.btn-delete:active {
+  background-color: #660708;
+  border-top: 3px solid #1e2122;
+}
+
+.error {
+  background-color: #918b8b;
+}
